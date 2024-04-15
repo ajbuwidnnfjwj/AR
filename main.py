@@ -111,3 +111,5 @@ if __name__ == '__main__':
                     key = cv.waitKey(10)
                     if key == ord(' '):
                         break
+                else:
+                    break
