@@ -101,5 +101,13 @@ if __name__ == '__main__':
             cv.putText(img, info, (10, 25), cv.FONT_HERSHEY_DUPLEX, 0.6, (0, 255, 0))
             cv.imshow("AR", img)
             
-            if cv.waitKey(10) == 27:
+            key = cv.waitKey(10)
+            if key == 27:
                 break
+            if key == 27:
+                break
+            elif key == ord(' '):
+                while key != 27:
+                    key = cv.waitKey(10)
+                    if key == ord(' '):
+                        break
